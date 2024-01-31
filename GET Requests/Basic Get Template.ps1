@@ -2,4 +2,5 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $token = "insert your token here"
 
-Invoke-RestMethod -Method GET -Uri "put endpoint here in within the quotations" -Headers @{"Authorization" = "Bearer $token"}
+$output = Invoke-RestMethod -Method GET -Uri "put endpoint here in within the quotations" -Headers @{"Authorization" = "Bearer $token"}
+$output
