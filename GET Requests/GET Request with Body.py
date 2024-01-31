@@ -19,6 +19,6 @@ payload = {
 }
 
 # Make a POST request with data in the request body
-response = requests.post(api_url, headers=headers, json=payload)
+response = requests.get(api_url, headers=headers, json=payload)
 
 print('Response:', response.json())  # Assuming the response is in JSON format
